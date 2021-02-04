@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_25sdp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:layout_margin="@dimen/_2sdp"
+        >
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/AdminViewProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp"
+            />
+        <TextView
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/AdminViewProductQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Quantity"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp"
+            />
+        <TextView
+            android:id="@+id/AdminViewProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:text="Product Name"
+            android:layout_below="@id/AdminViewProductPrice"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

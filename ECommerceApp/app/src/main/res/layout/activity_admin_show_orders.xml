@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:id="@+id/Rl"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_2sdp"
+            android:src="@drawable/ic_baseline_history_24"
+            android:id="@+id/IVHistory"/>
+        <TextView
+            android:layout_toEndOf="@id/IVHistory"
+            android:id="@+id/TotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="New Orders"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            android:padding="@dimen/_10sdp"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Rl"
+        android:id="@+id/NewOrder"
+        android:background="@android:color/white"
+        />
+</RelativeLayout>

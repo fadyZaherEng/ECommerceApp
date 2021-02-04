@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_4sdp"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:textStyle="bold"
+    android:textAllCaps="false"
+    android:textSize="@dimen/_20ssp"
+    android:textColor="@color/purple_700"
+    android:text="Product Name"
+    android:gravity="center"
+    android:id="@+id/ProductNameHolder"
+    />
+    <ImageView
+        android:layout_below="@id/ProductNameHolder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_185sdp"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:src="@drawable/open_camera"
+        android:id="@+id/ProductImageHolder"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductImageHolder"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/purple_700"
+        android:text="Product Price"
+        android:gravity="center"
+        android:id="@+id/ProductPriceHolder"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductPriceHolder"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/purple_700"
+        android:text="Product Description"
+        android:gravity="center"
+        android:id="@+id/ProductDesHolder"
+        />
+</RelativeLayout>
